@@ -1,8 +1,8 @@
 CFLAGS=-Wall -g
 
-all:
-	make ex1
-	make ex3
+programs = ex1 ex3 ex4
+
+all: $(programs)
 
 clean:
-	rm -f ex1 ex3
+	rm -f $(programs)
